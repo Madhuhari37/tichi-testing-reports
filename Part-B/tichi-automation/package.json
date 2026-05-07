@@ -1,0 +1,34 @@
+{
+  "name": "tichi-job-application-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation tests for Tichi Job Portal - Job Application Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:safari": "npx playwright test --project=webkit",
+    "test:mobile": "npx playwright test --project='Mobile Chrome'",
+    "test:jobs": "npx playwright test tests/jobs.spec.js",
+    "test:application": "npx playwright test tests/application.spec.js",
+    "test:e2e": "npx playwright test tests/e2e-application-flow.spec.js",
+    "report": "npx playwright show-report",
+    "trace": "npx playwright show-trace"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "tichi",
+    "job-portal",
+    "e2e"
+  ],
+  "author": "QA Automation Team",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
